@@ -38,11 +38,11 @@ def install_requirements():
 install_requirements()
 
 # 🎛️ Telegram API token (replace with your actual token)
-TOKEN = '7424479555:AAGtNAbqXax_b3b--QnGYi5_XwBbQNw'
+TOKEN = '7551831535:AAHJwg4PDW-CmN-W_mwQuxUZgL4n8xEvpzo'
 bot = telebot.TeleBot(TOKEN, threaded=False)
 
 # 🛡️ List of authorized user IDs (replace with actual IDs)
-AUTHORIZED_USERS = [5588464519]
+AUTHORIZED_USERS = [5013530414]
 
 # 🌐 Global dictionary to keep track of user attacks
 user_attacks = {}
@@ -225,7 +225,7 @@ def rules(message):
 @bot.message_handler(commands=['owner'])
 def owner(message):
     log_command(message.from_user.id, '/owner')
-    bot.send_message(message.chat.id, "📞 Contact the owner: @venomXcrazy")
+    bot.send_message(message.chat.id, "📞 Contact the owner: '@venomXcrazy")
 
 # 💬 Command handler for /uptime. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁
 @bot.message_handler(commands=['uptime'])
